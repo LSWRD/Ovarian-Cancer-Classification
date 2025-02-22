@@ -1,0 +1,16 @@
+torch
+timm
+torchvision
+pyyaml
+numpy
+pandas
+lightning
+torchmetrics
+torch_optimizer
+sklearn
+albumentations
+lightning-bolts
+staintools
+transformers
+torchstain
+faiss-cpu
