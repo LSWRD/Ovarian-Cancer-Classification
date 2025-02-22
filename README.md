@@ -37,7 +37,7 @@ WIP
 
 
 ## Notebooks
-- tma-generator-from-wsi.ipynb: TMA generation from WSI images.
+- [tma-generator-from-wsi.ipynb](https://github.com/LSWRD/Ovarian-Cancer-Classification/blob/main/tma-generator-from-wsi.ipynb): TMA generation from WSI images.
 
 ## References
 - (1) Asadi-Aghbolaghi, M.; Farahani, H.; Zhang, A.; Akbari, A.; Kim, S.; Chow, A.; Dane, S.; Consortium, O. C.; Consortium, O.; Huntsman, D. G.; Gilks, C. B.; Ramus, S.; Köbel, M.; Karnezis, A. N.; Bashashati, A. Machine Learning-Driven Histotype Diagnosis of Ovarian Carcinoma: Insights from the OCEAN AI Challenge. medRxiv2024. https://doi.org/10.1101/2024.04.19.24306099.
