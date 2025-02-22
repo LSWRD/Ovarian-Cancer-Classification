@@ -234,10 +234,5 @@ class UBCModelArcFace(L.LightningModule):
 
     def configure_optimizers(self):
         optimizer = torch.optim.AdamW(self.parameters(), lr=self.config.lr0)
-        if self.config.scheduler == "lw_cos_lr":
-            from pl_bolts.optimizers.lr_scheduler import LinearWarmupCosineAnnealingLR
-            scheduler = LinearWarmupCosineAnnealingLR(optimizer, warmup_epochs=self.config.warmup_epochs,
-                                                      max_epochs=self.config.epochs, eta_min=self.config.lrf)
-        else:
-            scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, self.config.epochs, eta_min=self.config.lrf)
+        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, self.config.epochs, eta_min=self.config.lrf)
         return [optimizer], [scheduler]
