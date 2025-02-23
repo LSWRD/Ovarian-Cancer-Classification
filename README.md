@@ -30,10 +30,16 @@ Finally, the following stain/color augmentations are randomly applied to the TMA
 - Macenko (with a generic reference)
 - Reinhard (using some TMA references) 
 
-![TMA pipeline overview](tma_generated.png)
+![TMA generation](tma_generated.png)
 
-## WSI
-WIP
+Generated TMA has been reviewed to assess whether or not they should be considered for the training.
+
+## WSI training pipeline overview:
+![WSI pipeline overview](pipeline_wsi_model.png)
+Two features extractors from foundation models are applied:
+- [LunitDINO ViTS](https://github.com/lunit-io/benchmark-ssl-pathology). It provides 768 features from 224x224 tiles.
+- [CTransPath](https://github.com/Xiyue-Wang/TransPath). It provides 384 features from 224x224 tiles.
+They are followed by a Multiple Instance Learning (MIL) module such as AttentionMIL to provide per image prediction.
 
 
 ## Notebooks
@@ -44,6 +50,7 @@ WIP
 
 ## Data
 - [Download dataset](https://www.kaggle.com/competitions/UBC-OCEAN/data) (794GB)
+  (25 TMA images, 513 WSI images)
 
 ## References
 - (1) Asadi-Aghbolaghi, M.; Farahani, H.; Zhang, A.; Akbari, A.; Kim, S.; Chow, A.; Dane, S.; Consortium, O. C.; Consortium, O.; Huntsman, D. G.; Gilks, C. B.; Ramus, S.; Köbel, M.; Karnezis, A. N.; Bashashati, A. Machine Learning-Driven Histotype Diagnosis of Ovarian Carcinoma: Insights from the OCEAN AI Challenge. medRxiv2024. https://doi.org/10.1101/2024.04.19.24306099.
