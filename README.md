@@ -39,8 +39,14 @@ WIP
 ## Notebooks
 - [tma-generator-from-wsi.ipynb](https://github.com/LSWRD/Ovarian-Cancer-Classification/blob/main/tma-generator-from-wsi.ipynb): TMA generation from WSI images.
 - [model-tma-arcface.ipynb](https://github.com/LSWRD/Ovarian-Cancer-Classification/blob/main/model-tma-arcface.ipynb): EfficientNet/TinyVit + Arcface training.
+- [model-tma-mil.ipynb](https://github.com/LSWRD/Ovarian-Cancer-Classification/blob/main/model-tma-mil.ipynb): LunitDINO + AttentionMIL training.
+
+
+## Data
+- [Download dataset](https://www.kaggle.com/competitions/UBC-OCEAN/data) (794GB)
 
 ## References
 - (1) Asadi-Aghbolaghi, M.; Farahani, H.; Zhang, A.; Akbari, A.; Kim, S.; Chow, A.; Dane, S.; Consortium, O. C.; Consortium, O.; Huntsman, D. G.; Gilks, C. B.; Ramus, S.; Köbel, M.; Karnezis, A. N.; Bashashati, A. Machine Learning-Driven Histotype Diagnosis of Ovarian Carcinoma: Insights from the OCEAN AI Challenge. medRxiv2024. https://doi.org/10.1101/2024.04.19.24306099.
 - (2) Farahani, H.; Boschman, J.; Farnell, D.; Darbandsari, A.; Zhang, A.; Ahmadvand, P.; Jones, S. J.; Huntsman, D.; Köbel, M.; Gilks, C. B.; Singh, N.; Bashashati, A. Deep Learning-Based Histotype Diagnosis of Ovarian Carcinoma Whole-Slide Pathology Images. Modern Pathology 2022, 35 (12), 1983–1990.
-- [Download dataset](https://www.kaggle.com/competitions/UBC-OCEAN/data) (794GB)
+- (3) Wölflein, G., Ferber, D., Meneghetti, A. R., El Nahhas, O. S. M., Truhn, D., Carrero, Z. I., Harrison, D. J., Arandjelović, O., & Kather, J. N. (2023). A good feature extractor is all you need for weakly supervised pathology slide classification. [arXiv:2311.11772](https://arxiv.org/abs/2311.11772v5).
+
